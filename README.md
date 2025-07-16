@@ -22,26 +22,40 @@ Process & Methodologies
    
 ○ High-resolution images of various fabrics were collected, including both defective
 and non-defective samples.
+
 ○ Types of defects considered include holes, stains, weaving errors, misalignment,
 and scratches.
-3. Data Preprocessing:
+
+2. Data Preprocessing:
+
 ○ Images were resized, converted to grayscale, normalized, and augmented using
 techniques such as rotation, flipping, zooming, and shifting to improve
 robustness.
+
 ○ Data was split into training and testing sets to ensure effective model evaluation.
-4. Model Architecture:
+
+3. Model Architecture:
+   
 ○ A Sequential CNN model was developed using TensorFlow and Keras.
+
 ○ The architecture consisted of convolutional layers, pooling layers, dropout layers,
 and dense layers to extract features and classify images.
+
 ○ Class weights were adjusted to address the imbalance between defective and
 non-defective samples.
-5. Model Training:
+
+4. Model Training:
+   
 ○ The model was trained using binary cross-entropy loss and the Adam optimizer
 with a learning rate of 0.001.
+
 ○ Training was performed over multiple epochs, with accuracy and loss metrics
 tracked.
-6. Model Evaluation:
+
+5. Model Evaluation:
+    
 ○ Evaluation metrics included accuracy, precision, recall, F1-score, and confusion
 matrix analysis.
+
 ○ The model's performance was validated against the test dataset, achieving high
 detection accuracy.
